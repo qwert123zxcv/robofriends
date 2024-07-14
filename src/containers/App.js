@@ -22,6 +22,7 @@ class App extends React.Component{
 		fetch('https://jsonplaceholder.typicode.com/users')
 		.then(response => response.json())
 		.then((response)=>{
+			console.log(response);
 			this.setState({robots: response});
 		});
 	}
